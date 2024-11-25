@@ -1,0 +1,638 @@
+@media (max-width: 575.98px) { 
+    .navbar-img {
+        width: 88px;
+    }
+    .navbar {
+        --bs-navbar-padding-y: 0PX;
+        z-index: 100;
+    }
+    .show {
+        font-size: 15px;
+    }
+    .navbar-toggler {
+	padding: 1px 3px;
+	font-size:18px;
+	color: Black;
+	background-color: transparent;
+	border:1px solid black;
+	border-radius:10px;
+}
+    .navbar-toggler:focus {
+        box-shadow:none;
+    }
+    .main-menu li a {
+        font-size: 18px;
+        color: rgb(255, 255, 255) !important;
+        font-weight: 800;
+        background: linear-gradient(122deg, rgba(170,180,58,1) 20%, rgba(253,29,122,0.6913631663602942) 52%, rgba(171,69,252,1) 100%);
+        border-radius: 10px;
+        padding: 3px 10px;
+        text-align: center;
+    }
+    .background {
+        width: 100%;
+        position: relative;
+        top: 0px;
+        z-index: 10;
+    }
+    .wellCome {
+        width: 100%;
+        height: 100%;
+    }
+    #popup {
+        position: absolute;
+        left: 0px;
+        top: auto;
+        z-index: 1000;
+        height: 100%;
+        width: 100%;
+    }
+    .wellcome-img img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .wellCome-popup {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        animation: wellCome 0.3s linear;
+        position: absolute;
+    }
+    .popup-input {
+        font-size: 16px;
+        padding-left: 10px;
+        display: block;
+        width: 185px;
+        color: white;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #35a708;
+        background: transparent;
+    }
+    .name-box {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 20px;
+        top: -25px;
+    }
+    .popup-button {
+        width: 7em;
+        height: 2.5em;
+        border-radius: 30em;
+        font-size: 15px;
+        font-family: inherit;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        /*-=-=-=-=-=-=- home page end here-=-=-=-=-=-=- */
+        
+    }
+    .slider {
+        height: 100%;
+        width: 100%;
+        /* border: 1px solid red; */
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        gap: 0px;
+        z-index: 100;
+        background-image: url(/images/banner-img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: slide 10s linear infinite;
+        /* overflow: hidden; */
+    }
+    /*-=-=-=-=-=-=- About page start here-=-=-=-=-=-=- */
+    #about {
+        margin-top: 0px;
+        background: #10375C;
+        padding: 20px;
+    }
+    .heading h1 {
+        font-size: 34px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px;
+        box-shadow: -1px 4px 9px 1px rgba(0,0,0,0.75);
+        color: white;
+        margin-bottom: 30px;
+        font-family: var(--Oswald);
+    }
+    .sengle-about {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .imgs img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 3px -2px 17px -3px rgba(255, 255, 255, 0.75);
+    }
+    .about-head h1 {
+        font-size: 35px;
+        font-weight: 800;
+        color: white;
+        font-family: var(--Oswald);
+    }
+    .about-head p {
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        font-style: italic;
+    }
+    .medul {
+        margin-top: 50px;
+    }
+    #home {
+        width: 100%;
+        height: auto;
+    }
+    /*-=-=-=-=-=-=- About page end here-=-=-=-=-=-=- */
+    /* -=-=-=-=-=-=- contact part start -=-=-=-==-=-=- */
+    .img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .name h4 {
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+    }
+    .sengle-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    .logo-contact-img {
+        display: none;
+    }
+    /* -=-=-=-=-=-=- contact part start -=-=-=-==-=-=- */
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) { 
+    .navbar-img {
+        width: 110px;
+    }
+    .navbar {
+        --bs-navbar-padding-y: 0PX;
+        z-index: 100;
+    }
+    .container, .container-sm {
+        max-width: 695px;
+    }
+    .show {
+        font-size: 20px;
+    }
+    .navbar-toggler {
+	padding: 1px 3px;
+	font-size:18px;
+	color: Black;
+	background-color: transparent;
+	border:1px solid black;
+	border-radius:10px;
+}
+    .navbar-toggler:focus {
+        box-shadow:none;
+    }
+    .main-menu li a {
+        font-size: 18px;
+        color: rgb(255, 255, 255) !important;
+        font-weight: 800;
+        background: linear-gradient(122deg, rgba(170,180,58,1) 20%, rgba(253,29,122,0.6913631663602942) 52%, rgba(171,69,252,1) 100%);
+        border-radius: 10px;
+        padding: 3px 10px;
+        text-align: center;
+    }
+    .background {
+        width: 100%;
+        position: relative;
+        top: 0px;
+        z-index: 10;
+    }
+    .wellCome {
+        width: 100%;
+        height: 100%;
+    }
+    #popup {
+        position: absolute;
+        left: 375px;
+        top: 246px;
+        z-index: 1000;
+    }
+    .wellcome-img img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    #popup {
+        position: absolute;
+        left: 68px;
+        top: 246px;
+        z-index: 1000;
+        height: 80%;
+        width: 80%;
+    }
+    .name-box {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 120px;
+        top: -25px;
+    }
+    .popup-input {
+        font-size: 16px;
+        padding-left: 10px;
+        display: block;
+        width: 230px;
+        color: white;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #35a708;
+        background: transparent;
+    }
+    .wellCome-popup {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        animation: wellCome 0.3s linear;
+        position: absolute;
+    }
+    .slider {
+        height: 100%;
+        width: 100%;
+        /* border: 1px solid red; */
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        gap: 0px;
+        z-index: 100;
+        background-image: url(/images/banner-img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: slide 10s linear infinite;
+        /* overflow: hidden; */
+    }
+       /*-=-=-=-=-=-=- About page start here-=-=-=-=-=-=- */
+    #about {
+        margin-top: 0px;
+        background: #10375C;
+        padding: 20px;
+    }
+    .heading h1 {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px;
+        box-shadow: -1px 4px 9px 1px rgba(0,0,0,0.75);
+        color: white;
+        margin-bottom: 30px;
+        font-family: var(--Oswald);
+    }
+    .sengle-about {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .imgs img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 3px -2px 17px -3px rgba(255, 255, 255, 0.75);
+    }
+    .about-head h1 {
+        font-size: 36px;
+        font-weight: 800;
+        color: white;
+        font-family: var(--Oswald);
+        text-align: center;
+    }
+    .about-head p {
+        font-size: 17px;
+        font-weight: 500;
+        color: white;
+        font-style: italic;
+        text-align: center;
+    }
+    .medul {
+        margin-top: 120px;
+    }
+    #home {
+        width: 100%;
+        height: auto;
+    }
+    /*-=-=-=-=-=-=- About page end here-=-=-=-=-=-=- */
+    /* contact part start  */
+    .logo-contact-img {
+        display: none;
+    }
+    /* contact part end */
+}
+
+
+@media (min-width: 769px) and (max-width: 992.98px) { 
+    .navbar-img {
+        width: 120px;
+    }
+    .navbar {
+        --bs-navbar-padding-y: 0PX;
+        z-index: 100;
+    }
+    .container, .container-sm {
+        max-width: 870px;
+    }
+    .show {
+        font-size: 20px;
+    }
+    .navbar-toggler {
+        padding: 2px 4px;
+        font-size: 22px;
+        color: Black;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .navbar-toggler:focus {
+        box-shadow:none;
+    }
+    .main-menu li a {
+        font-size: 18px;
+        color: rgb(255, 255, 255) !important;
+        font-weight: 800;
+        background: linear-gradient(122deg, rgba(170,180,58,1) 20%, rgba(253,29,122,0.6913631663602942) 52%, rgba(171,69,252,1) 100%);
+        border-radius: 10px;
+        padding: 3px 10px;
+        text-align: center;
+    }
+    .background {
+        width: 100%;
+        position: relative;
+        top: 0px;
+        z-index: 10;
+    }
+    .wellCome {
+        width: 100%;
+        height: 100%;
+    }
+    #popup {
+        position: absolute;
+        left: 93px;
+        top: 300px;
+        z-index: 1000;
+        height: 80%;
+        width: 80%;
+    }
+    .wellcome-img img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .name-box {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 195px;
+        top: -25px;
+    }
+    .popup-input {
+        font-size: 16px;
+        padding-left: 10px;
+        display: block;
+        width: 250px;
+        color: white;
+        font-size: 24px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #35a708;
+        background: transparent;
+    }
+    .wellCome-popup {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        animation: wellCome 0.3s linear;
+        position: absolute;
+    }
+    .slider {
+        height: 100%;
+        width: 100%;
+        /* border: 1px solid red; */
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        gap: 0px;
+        z-index: 100;
+        background-image: url(/images/banner-img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: slide 10s linear infinite;
+        /* overflow: hidden; */
+    }
+           /*-=-=-=-=-=-=- About page start here-=-=-=-=-=-=- */
+        #about {
+            margin-top: 0px;
+            background: #10375C;
+            padding: 20px;
+        }
+        .heading h1 {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            padding: 10px;
+            box-shadow: -1px 4px 9px 1px rgba(0,0,0,0.75);
+            color: white;
+            margin-bottom: 30px;
+            font-family: var(--Oswald);
+        }
+        .sengle-about {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        .imgs img {
+            width: 250px;
+            border-radius: 5px;
+            box-shadow: 3px -2px 17px -3px rgba(255, 255, 255, 0.75);
+        }
+        .about-head h1 {
+            font-size: 38px;
+            font-weight: 800;
+            color: white;
+            font-family: var(--Oswald);
+        }
+        .about-head p {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            font-style: italic;
+        }
+        .medul {
+            margin-top: 50px;
+        }
+        #home {
+            width: 100%;
+            height: auto;
+        }
+        /*-=-=-=-=-=-=- About page end here-=-=-=-=-=-=- */
+        /* contact part start  */
+    .logo-contact-img {
+        display: none;
+    }
+    /* contact part end */
+}
+
+@media (min-width: 993px) and (max-width: 1200.98px) { 
+    .background {
+        width: 100%;
+        position: relative;
+        top: 0px;
+        z-index: 10;
+    }
+    .wellCome {
+        width: 100%;
+        height: 100%;
+    }
+    #popup {
+        position: absolute;
+        left: 105px;
+        top: 330px;
+        z-index: 1000;
+        height: 80%;
+        width: 80%;
+    }
+    .wellcome-img img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .name-box {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 290px;
+        top: -10px;
+    }
+    .popup-input {
+        font-size: 16px;
+        padding-left: 10px;
+        display: block;
+        width: 250px;
+        color: white;
+        font-size: 24px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #35a708;
+        background: transparent;
+    }
+    .wellCome-popup {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        animation: wellCome 0.3s linear;
+        position: absolute;
+    }
+    .slider {
+        height: 100%;
+        width: 100%;
+        /* border: 1px solid red; */
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        gap: 0px;
+        z-index: 100;
+        background-image: url(/images/banner-img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: slide 10s linear infinite;
+        /* overflow: hidden; */
+    }
+             /*-=-=-=-=-=-=- About page start here-=-=-=-=-=-=- */
+            #about {
+                margin-top: 0px;
+                background: #10375C;
+                padding: 20px;
+            }
+            .heading h1 {
+                font-size: 36px;
+                font-weight: 700;
+                text-align: center;
+                padding: 10px;
+                box-shadow: -1px 4px 9px 1px rgba(0,0,0,0.75);
+                color: white;
+                margin-bottom: 30px;
+                font-family: var(--Oswald);
+            }
+            .sengle-about {
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+            }
+            .imgs img {
+                width: 250px;
+                border-radius: 5px;
+                box-shadow: 3px -2px 17px -3px rgba(255, 255, 255, 0.75);
+            }
+            .about-head h1 {
+                font-size: 38px;
+                font-weight: 800;
+                color: white;
+                font-family: var(--Oswald);
+            }
+            .about-head p {
+                font-size: 18px;
+                font-weight: 500;
+                color: white;
+                font-style: italic;
+            }
+            .medul {
+                margin-top: 65px;
+            }
+            #home {
+                width: 100%;
+                height: auto;
+            }
+                    /* contact part start  */
+    .logo-contact-img {
+        display: none;
+    }
+    /* contact part end */
+    
+            /*-=-=-=-=-=-=- About page end here-=-=-=-=-=-=- */
+}

@@ -1,0 +1,477 @@
+/* --------google font part start---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Sixtyfour+Convergence&display=swap');
+/* ---------Oswald font---- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Sixtyfour+Convergence&display=swap');
+/* -=-===========roboto font ---- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Sixtyfour+Convergence&display=swap');
+/* --------common css part end---------------- */
+/* --------common css part start---------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+:root{
+    --Rubik:"Rubik Wet Paint", serif;
+    --Oswald: "Oswald", sans-serif;
+    --roboto: "Roboto", serif;
+}
+/* --------common css part end---------------- */
+/* ------home part start----- */
+#home{
+    width: 100%;
+    height: 100Vh;
+    /* position: relative; */
+}
+/* ------home part end----- */
+/* --------navbar css part start---------------- */
+.navbar-img{
+    width: 120px;
+}
+.main-menu {
+    gap: 8px;
+}
+.main-menu li a{
+    font-size: 18px;
+    color:rgb(255, 255, 255) !important;
+    font-weight: 800;
+    background: linear-gradient(122deg, rgba(170,180,58,1) 20%, rgba(253,29,122,0.6913631663602942) 52%, rgba(171,69,252,1) 100%);
+    border-radius: 10px;
+    padding:3px 10px;
+}
+.main-menu li a:hover{
+    background: linear-gradient(289deg, rgba(253,29,122,0.6913631663602942) 23%, rgba(171,69,252,1) 55%, rgba(170,180,58,1) 84%);
+    transform: scale(1.1);
+}
+.show{
+    font-size: 20px;
+    font-family: var(--Rubik);
+    text-transform: uppercase;
+    color: #FF77B7;
+    font-style: italic;
+}
+/* --------Navbar css part end---------------- */
+/* -----------background video start------ */
+.background {
+	width: 100%;
+	position: absolute;
+	top: 91px;
+}
+.background video{
+    width: 100%;
+    height: 100%;
+}
+/* -----------background video end------ */
+/* --------wellCome css part start---------------- */
+
+#popup{
+    position: absolute;
+    left: 630px;
+    top: 130px;
+    z-index: 1000;
+}
+.wellCome{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    font-size: 14px ;
+    font-weight: 700;
+    color: red;
+    position: absolute;
+    top: -25px;
+    left: 10px;
+}
+.wellcome-img img{
+    height: 300px;
+    width: 600px;
+    border-radius: 10px;
+}
+.wellCome-popup{
+    height: 200px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    animation: wellCome 0.3s linear;
+    position: absolute
+}
+@keyframes wellCome{
+    0%{
+        transform: translateY(-220%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.name-box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 145px;
+    top: -25px;
+}
+.popup-input{
+    font-size: 16px;
+    padding-left: 10px ;
+    display: block;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #35a708;
+    background: transparent;
+}
+.popup-button{
+    width: 8em;
+    height: 2.5em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff; */
+}
+.popup-button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+.popup-button:hover::before {
+    width: 9em;
+}
+/* --------wellCome css part end---------------- */
+/* ---------------slider part start-------- */
+.slider{
+    height: 500px;
+    width: 950px; 
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 145px;
+    top: 96px;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+    background-image: url(/images/banner-img.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: slide 10s linear infinite;
+    /* overflow: hidden; */
+}
+@keyframes slide{
+    0%{
+        background-image: url(/images/banner-img.jpg);
+    }
+    20%{
+        background-image: url(/images/banner-img.jpg);
+    }
+    40%{
+        background-image: url(/images/To-do-list.png);
+    }
+    60%{
+        background-image: url(/images/To-do-list.png);
+    }
+    80%{
+        background-image: url(/images/I-Have-Who-Has-0-20.webp)
+    }
+    100%{
+        background-image: url(/images/I-Have-Who-Has-0-20.webp)
+    }
+}
+/* -=-=-=-=-=-=-=-=-=-slide part end-=-=-=-=-=-=- */
+/* -=-=-=-=-=-=-=-=-=-sort nav part start-=-=-=-=-=-=- */
+.sort-home{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    position: absolute;
+    right: 0px;
+}
+.sort-home a i{
+    font-size: 24px;
+    color: white;
+}
+/* -=-=-=-=-=-=-=-=-=-sort nav part end-=-=-=-=-=-=- */
+/* -=-=-=-=-=-=-=-=-=-About section start here-=-=-=-=-=-=- */
+#about {
+	margin-top: 230px;
+	background: #10375C;
+	padding: 20px;
+}
+.heading h1{
+    font-size: 40px ;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    box-shadow: -1px 4px 9px 1px rgba(0,0,0,0.75);
+    color: white;
+    margin-bottom: 40px;
+    font-family: var(--Oswald);
+}
+.imgs img{
+    width:250px ;
+    border-radius: 5px;
+    box-shadow: 3px -2px 17px -3px rgba(255, 255, 255, 0.75);
+}
+.sengle-about{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.about-head h1{
+    font-size: 38px ;
+    font-weight: 800;
+    color: white;
+    font-family: var(--Oswald);
+}
+.about-head p{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    font-style: italic;
+}
+.about-head p mark{
+    background: green;
+    color: white;
+}
+.medul{
+    margin-top: 130px;
+}
+/* -=-=-=-=-=-=-=-=-=-About section End here-=-=-=-=-=-=- */
+/* -=-=-=-=--=-=-=-=-=To do list part start=-=-=-=-=-=-=-=- */
+#to-do{
+    background: #4CC9FE;
+    padding: 20px;
+}
+.todo-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list img{
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top:-20px;
+}
+.details h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: #EB8317;
+    font-family: var(--Oswald);
+    text-align: center;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.details p{
+    font-size: 18px;
+    font-weight: 600;
+    color:black ;
+    font-family: var(--roboto);
+    letter-spacing: 1px;
+    text-align: center;
+}
+.create-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.create-list h4{
+    font-size: 28px;
+    font-family: var(--Oswald);
+    font-weight: 600;
+    text-align: center;
+    color: #C62E2E;
+}
+.arrow{
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+.arrow i{
+    font-size: 40px;
+    color: #3B1E54;
+    animation: arrow 2s linear infinite;
+    margin-top: -10px;
+}
+@keyframes arrow{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+/* -------button------ */
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+.btn:hover {
+    color: black;
+}
+
+.btn:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/* -=-=-=-=--=-=-=-=-=To do list part end=-=-=-=-=-=-=-=- */
+/* -=-=-=-=--=-=-=-=-=Gauss game section start=-=-=-=-=-=-=-=- */
+#gauss-game{
+    background: #FF77B7;
+}
+.gaussing-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gaussing-img img{
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top:-20px;
+}
+/* -=-=-=-=--=-=-=-=-=Gauss section end=-=-=-=-=-=-=-=- */
+/* -=-=-=-=--=-=-=-=-=contact section start=-=-=-=-=-=-=-=- */
+#contact{
+    background: url(https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149177092.jpg?semt=ais_hybrid);
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.sengle-card{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center ;
+    padding: 30px;
+}
+.head-contact h1{
+    text-align: center;
+    font-size: 36px ;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+.img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.name h4{
+    font-size: 24px ;
+    font-weight: 700;
+    color: white;
+}
+.link{
+    display: flex;
+    gap: 20px;
+}
+.phone i{
+    font-size: 25px;
+    color: rgb(21, 255, 0);
+}
+.phone a i:hover{
+    color: rgb(255, 16, 16);
+}
+.phone a{
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+}
+.facebook i{
+    font-size: 25px;
+    color: rgb(21, 255, 0);
+}
+.facebook i:hover{
+    color: rgb(255, 16, 16);
+}
+.gmail i{
+    font-size: 25px;
+    color: rgb(21, 255, 0);
+}
+.gmail i:hover{
+    color: rgb(255, 16, 16);
+}
+.git-hub i{
+    font-size: 25px;
+    color: rgb(21, 255, 0);
+}
+.git-hub i:hover{
+    color: rgb(255, 16, 16);
+}
+/* -=-=-=-=--=-=-=-=-=contact section end=-=-=-=-=-=-=-=- */
+
+
+
+

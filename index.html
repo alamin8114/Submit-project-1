@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 1</title>
+    <!-- ----font awesome -----link -->
+        <link rel="stylesheet" href="css/all.min.css">
+    <!-- ----bootstrap link here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="./css/Responsive.css">
+</head>
+<body>
+    <!-- -=-=-=-=--=-=-=-=Home part start here-=-=-=-=-=-=-=- -->
+    <section id="home">
+        <!-- ------navbar part start ------ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+        <a class="navbar-brand" href="#"><img class="navbar-img" src="images/navbar.png" alt="navbar-img"></a><span class="show"></span>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 main-menu">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a><span></span>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#to-do">To-do List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#gauss-game">Gauss Game</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- ------navbar part end ------ -->
+    <!---------- background part here-------- -->
+    <div class="background">
+        <video src="images/4153409-uhd_3840_2160_25fps.mp4" autoplay muted loop  height="100px "
+        ></video>
+        <!-- -------popup part start--------- -->
+        <div id="popup">
+            <div class="container">
+                <div class="wellCome">
+                    <div class="wellCome-popup">
+                        <div class="wellcome-img">
+                            <img src="images/8CPR.gif" alt="wellCome">
+                            <div class="name-box ">
+                                <p class="error"></p>
+                                <input onkeydown="EnterClick(event)" type="text" placeholder="Enter your name" class="popup-input popupInput">
+                                <button onclick="nameSubmit()" class="popup-button">Run</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------popup part end--------- -->
+        <!-- -------slider start -------------- -->
+            <div class="slider"></div>
+        <!-- -------slider end -------------- -->
+    </div>
+    <!---------- background part here-------- -->
+
+</section>
+<!-- -=-=-=-=-=-=-=-Home part end here-=-=-=-=-=-=-= -->
+<section id="about">
+    <div class="heading">
+        <h1>About</h1>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6">
+                <div class="sengle-about">
+                    <div class="imgs">
+                        <img src="images/my-img.jpg" alt="My images">
+                    </div>
+                    <div class="about-text">
+                        <div class="about-head">
+                            <h1>Md Alamin islam</h1>
+                            <p>Hi I am Mohammad Alamin Islam.I am a frontend developer.<br>
+                                <mark>I work with React JS</mark>.I make the website beautiful and attractive.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="medul">
+                    <div class="sengle-about">
+                        <div class="about-text">
+                            <div class="about-head">
+                                <h1 style="color: green;">Sheikh Medul</h1>
+                                <p>Hi I am Sheikh Medul.I am a frontend developer.<br>
+                                    <mark style="background:#B03052;">I work with React JS</mark>.I make the website beautiful and attractive.</p>
+                            </div>
+                        </div>
+                        <div class="imgs">
+                            <img src="images/sheikh-medul.png" alt="My images">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- -=-=--=-=-=--=-=--About section end -=-=-=-=-=-=-=--=-=- -->
+<!-- -=-=--=-=-=--=-=--To do list section start-=-=-=-=-=-=-=--=-=- -->
+<section id="to-do">
+    <div class="heading">
+        <h1>To Do List</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="todo-list">
+                    <img src="images/pexels-photo-20279300.webp" alt="todo">
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="details">
+                            <h1>What is To Do List?</h1>
+                            <p>A to-do list is just a list of things you have to-do. That means basically anything and everything can be on your to-do list—but just because you've written your to-dos down doesn't mean your to-do list is actually useful. Effectively tracking when your work is due can help you prioritize and get great work done.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="details">
+                            <h1>Rules</h1>
+                            <p style="text-align: left; margin-left: 20px; "> 1.Capture             everything. ...<br>
+                                2.Lists, lists, and more lists. ...<br>
+                                3.Organize your to-do list by workflow, priority,<br> 4.or due date. ...<br>
+                                5.Make it actionable. ...<br>
+                                6.Verbs first, details later. ...<br>
+                                7.Prioritize your to-dos. ...<br>
+                                8.Always include a deadline. ...<br>
+                                9.Break big work into smaller tasks..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="create-list">
+                            <h4>
+                                Click the button below to create a list
+                            </h4>
+                            <div class="arrow">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                            <div class="button">
+                                <a class="btn" target="_blank" href="/to-do list/index.html">To Do List</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- -=-=--=-=-=--=-=--To do list section end-=-=-=-=-=-=-=--=-=- -->
+<!-- -=-=--=-=-=--=-=--gauss game section start-=-=-=-=-=-=-=--=-=- -->
+<section id="gauss-game">
+    <div class="heading">
+        <h1>Gauss Game</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="gaussing-img">
+                    <img src="images/sddefault.jpg" alt="todo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="details">
+                        <h1 style="color: #4CC9FE;">What is Gauss Game?</h1>
+                        <p style="color: #400475;">In a number guessing game, the user guesses a randomly generated secret number within a given number of attempts. After each guess, the user gets hints on whether their guess is too high, too low, or correct.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="details">
+                        <h1 style="color: #4CC9FE;" >Rules</h1>
+                        <p style="text-align: left; margin-left: 20px; color:#400475;">
+                            1. With a family member, take turns thinking of a number from 1 to 10. One person thinks of the number, and the other person has to guess the number.<br>
+                            2. After the first person gives the number, the second guest will get five chances. 
+                            <br>
+                            3. If the second person is not able to guess, it goes to the third person.
+                            <BR>
+                            4. If the third person guesses then the third person wins and if they fail to guess then the first person wins.
+                        </p>
+                    </div>
+                </div>    
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="create-list">
+                    <h4 style="color: #BCF2F6;">
+                        Click the button below to play the guessing game
+                    </h4>
+                    <div class="arrow">
+                        <i style="color:#8ac5df ;" class="fa-solid fa-arrow-down"></i>
+                    </div>
+                    <div class="button">
+                        <a class="btn" style="width: 10em;" target="_blank" href="/contest number game/index.html">Play Gauss Game</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- -=-=--=-=-=--=-=--Gauss game section end-=-=-=-=-=-=-=--=-=- -->
+
+<!-- -=-=-=-=-=-=-=-=-=-=Contact part start -==-=-==-=-=--==-=--=-=-- -->
+<section id="contact">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="head-contact">
+                <h1>Contact</h1>
+            </div>
+            <div class="row">
+                    <div class="col-lg-6">
+                        <div class="sengle-card">
+                            <div class="img">
+                                <img src="images/banne0r-img.png" alt="alamin img">
+                            </div>
+                            <div class="name">
+                                <h4>Md Alamin Islam</h4>
+                            </div>
+                            <div class="link">
+                                <div class="facebook">
+                                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100040260589674">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="phone">
+                                    <a href="tel:01794383148"><i class="fa-solid fa-phone"></i></a>
+                                </div>
+                                <div class="gmail">
+                                    <a href="mailto:28alaminislam2003@gmail.com"><i class="fa-regular fa-envelope-open"></i></a>
+                                </div>
+                                <div class="git-hub">
+                                    <a href="https://github.com/alamin8114"><i class="fa-brands fa-github"></i></a>
+                                </div>               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="sengle-card">
+                            <div class="img">
+                                <img src="images/sheikh-medul.png" alt="alamin img">
+                            </div>
+                            <div class="name">
+                                <h4>Sheikh Medul</h4>
+                            </div>
+                            <div class="link">
+                                <div class="facebook">
+                                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100072492920967">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="phone">
+                                    <a href="tel:01310351164"><i class="fa-solid fa-phone"></i></a>
+                                </div>
+                                <div class="gmail">
+                                    <a href="mailto:smmedulfdr@gmail.com"><i class="fa-regular fa-envelope-open"></i></a>
+                                </div>
+                                <div class="git-hub">
+                                    <a href="https://github.com/SM-Medul-FDR"><i class="fa-brands fa-github"></i></a>
+                                </div>               
+                            </div>
+                            <!-- -==-=-=-= sort navbar start -=-=-=-=---> 
+                            <div class="sort-home">
+                                <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                            </div>
+                            <!-- -==-=-=-= sort navbar end -=-=-=-=--=-->
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- -=-=-=-=-=-=-=-=-=-=Contact part start -==-=-==-=-=--==-=--=-=-- -->
+
+
+<!-- -----bootstrap link------- -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- =======js link here========== -->
+<script src="js/script.js"></script>
+</body>
+</html>
